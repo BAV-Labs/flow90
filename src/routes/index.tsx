@@ -433,7 +433,7 @@ function Landing() {
               { t: "Constant context-switching", d: "It takes 23 minutes to return to deep work." },
               { t: "Burnout, not output", d: "More hours rarely mean better thinking." },
             ].map((b) => (
-              <div key={t} className="bg-surface p-7">
+              <div key={b.t} className="bg-surface p-7">
                 <div className="text-sm font-medium">{b.t}</div>
                 <div className="mt-2 text-sm text-muted-foreground">{b.d}</div>
               </div>
