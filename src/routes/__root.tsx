@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Focus90 – Deep Work Timer" },
+      { name: "description", content: "A calm productivity timer built around the 90-minute cycle your mind already follows. Work with your rhythm, not against it." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Focus90 – Deep Work Timer" },
+      { property: "og:description", content: "A calm productivity timer built around the 90-minute cycle your mind already follows. Work with your rhythm, not against it." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Focus90 – Deep Work Timer" },
+      { name: "twitter:description", content: "A calm productivity timer built around the 90-minute cycle your mind already follows. Work with your rhythm, not against it." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0c4be46d-b078-45db-b255-c0c5d34d7052/id-preview-6fa4d910--551ec135-18ef-401c-ac4d-39fbf35bafe6.lovable.app-1781446841816.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0c4be46d-b078-45db-b255-c0c5d34d7052/id-preview-6fa4d910--551ec135-18ef-401c-ac4d-39fbf35bafe6.lovable.app-1781446841816.png" },
     ],
     links: [
       {
