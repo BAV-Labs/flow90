@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/workspaces/flow90/src/routes/__root.tsx", children: ["/", "/faq", "/privacy", "/terms"], preloads: ["/flow90/assets/index-C7VPrlb_.js"], scripts: [{ attrs: { type: "module", async: true, src: "/flow90/assets/index-C7VPrlb_.js" } }] }, "/": { filePath: "/workspaces/flow90/src/routes/index.tsx", children: void 0, preloads: ["/flow90/assets/index-BEkeSUYU.js"] }, "/faq": { filePath: "/workspaces/flow90/src/routes/faq.tsx", children: void 0, preloads: ["/flow90/assets/faq-BaL8wzlC.js"] }, "/privacy": { filePath: "/workspaces/flow90/src/routes/privacy.tsx", children: void 0, preloads: ["/flow90/assets/privacy-CWmvN_X-.js"] }, "/terms": { filePath: "/workspaces/flow90/src/routes/terms.tsx", children: void 0, preloads: ["/flow90/assets/terms-D1dP1dN2.js"] } } });
+export {
+  tsrStartManifest
+};
