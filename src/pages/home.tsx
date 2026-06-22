@@ -14,16 +14,23 @@ export default function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    const id = location.hash.replace("#", "");
-    if (!id) return;
+    const hash = location.hash;
+    if (!hash) return;
 
+    const id = hash.replace("#", "");
     const el = document.getElementById(id);
+
     if (!el) return;
 
-    requestAnimationFrame(() => {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    const timer = requestAnimationFrame(() => {
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     });
-  }, [location]);
+
+    return () => cancelAnimationFrame(timer);
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
