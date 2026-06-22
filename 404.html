@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      const path = window.location.pathname;
+      const repo = "/flow90";
+
+      sessionStorage.redirect = path.replace(repo, "");
+      window.location.href = repo + "/";
+    </script>
+  </head>
+  <body></body>
+</html>
