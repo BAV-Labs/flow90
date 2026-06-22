@@ -13,12 +13,24 @@ const links = [
 export default function Header() {
   const { dark, setDark } = useTheme();
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleScroll = (id: string) => {
+    if (window.location.pathname !== "/flow90/") {
+      window.location.href = `/flow90/${id}`;
+      return;
+    }
+    const el = document.querySelector(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header
@@ -44,14 +56,14 @@ export default function Header() {
 
         {/* NAV */}
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
+          {links.map((link) => (
+            <button
+              key={link.href}
+              onClick={() => handleScroll(link.href)}
               className="hover:text-foreground transition-colors"
             >
-              {l.label}
-            </a>
+              {link.label}
+            </button>
           ))}
         </nav>
 
