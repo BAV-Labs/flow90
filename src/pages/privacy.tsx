@@ -1,128 +1,77 @@
+import LegalLayout from "@/components/ui/legal-layout";
+import { Section } from "@/components/ui/section";
+
 export default function Privacy() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-24">
-
-      {/* HEADER */}
-      <div className="text-center">
-        <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-          Legal
-        </div>
-
-        <h1 className="mt-4 text-balance text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-          Privacy Policy
-        </h1>
-
-        <p className="mt-4 text-sm text-muted-foreground">
-          Last updated: June 2026
-        </p>
-      </div>
-
-      {/* INTRO */}
-      <section className="mt-16 space-y-6 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          Flow90 Privacy Policy
-        </p>
-
+    <LegalLayout
+      pageTitle="Privacy Policy — Flow90"
+      eyebrow="Legal"
+      title="Privacy Policy"
+    >
+      <Section title="Overview">
         <p>
-          Your privacy is important to us. Flow90 is designed to help you focus
-          while respecting your privacy. We do not collect, store, sell, or share
-          any personal information.
+          Your privacy is important to us. Flow90 is designed to help you stay
+          focused without collecting personal information. We do not sell,
+          share or monetize your data.
         </p>
-      </section>
+      </Section>
 
-      {/* BLOCKS */}
-      <div className="mt-16 space-y-10">
+      <Section title="Information We Collect">
+        <p>
+          Flow90 does not require an account and does not collect personal
+          information such as your name, email address, phone number, location,
+          contacts, photos or other identifying information.
+        </p>
+      </Section>
 
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Information We Collect
-          </h2>
+      <Section title="Local Data">
+        <p>
+          Your timer settings, preferences and app data are stored locally on
+          your device using Apple's built-in technologies. This information
+          never leaves your device and is not transmitted to BAV Labs.
+        </p>
+      </Section>
 
-          <p className="mt-3 text-sm text-muted-foreground">
-            Flow90 does not collect personal data such as:
-          </p>
+      <Section title="Analytics & Third-Party Services">
+        <p>
+          Flow90 does not use third-party analytics, advertising SDKs or
+          tracking services to collect information about you.
+        </p>
+      </Section>
 
-          <ul className="mt-3 space-y-1 text-sm text-muted-foreground list-disc pl-5">
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Phone number</li>
-            <li>Location</li>
-            <li>Contacts</li>
-            <li>Photos</li>
-            <li>Usage analytics linked to your identity</li>
-          </ul>
-        </div>
+      <Section title="Advertising">
+        <p>
+          Flow90 does not display personalized advertising and does not sell
+          user data to third parties.
+        </p>
+      </Section>
 
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Local Data Storage
-          </h2>
+      <Section title="Children's Privacy">
+        <p>
+          Flow90 is intended for general audiences and does not knowingly
+          collect personal information from children or any other users.
+        </p>
+      </Section>
 
-          <p className="mt-3 text-sm text-muted-foreground">
-            Any settings or timer preferences are stored locally on your device
-            using Apple’s built-in technologies. This information never leaves your
-            device and is not transmitted to us.
-          </p>
-        </div>
+      <Section title="Changes">
+        <p>
+          We may update this Privacy Policy as Flow90 evolves. Any changes will
+          be published on this page together with the updated revision date.
+        </p>
+      </Section>
 
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Third-Party Services
-          </h2>
+      <Section title="Contact">
+        <p>
+          Questions about this Privacy Policy?
+        </p>
 
-          <p className="mt-3 text-sm text-muted-foreground">
-            Flow90 does not use third-party services to collect or process your
-            personal data.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Advertising
-          </h2>
-
-          <p className="mt-3 text-sm text-muted-foreground">
-            Flow90 does not display personalized advertising and does not sell your
-            data to third parties.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Children’s Privacy
-          </h2>
-
-          <p className="mt-3 text-sm text-muted-foreground">
-            Flow90 does not knowingly collect personal information from children or
-            any users.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Changes to This Policy
-          </h2>
-
-          <p className="mt-3 text-sm text-muted-foreground">
-            We may update this Privacy Policy from time to time. Changes will be
-            reflected on this page with an updated revision date.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-sm font-semibold text-foreground">
-            Contact
-          </h2>
-
-          <a
-  href="mailto:bav-labs@proton.me"
-  className="text-foreground underline underline-offset-4 hover:opacity-80"
->
-  bav-labs@proton.me
-</a>
-        </div>
-
-      </div>
-    </div>
+        <a
+          href="mailto:bav-labs@proton.me"
+          className="text-foreground underline underline-offset-4 hover:opacity-80"
+        >
+          bav-labs@proton.me
+        </a>
+      </Section>
+    </LegalLayout>
   );
 }

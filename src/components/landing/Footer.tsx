@@ -19,7 +19,7 @@ export default function Footer() {
         {/* CENTER / RIGHT LINKS */}
         <div className="flex flex-wrap items-center gap-6">
           <Link to="/privacy">Privacy</Link>
-          <Link to="/terms">Terms</Link>
+          <Link to="/impressum">Impressum</Link>
           <Link to="/faq">FAQ</Link>
 
           <a
@@ -35,7 +35,7 @@ export default function Footer() {
             rel="noopener noreferrer" 
             className="transition-colors hover:text-foreground"
           >
-            About
+            About us
           </a>
           
         </div>
