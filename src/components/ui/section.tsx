@@ -1,14 +1,12 @@
 import { ReactNode } from "react";
 
-interface SectionProps {
-  title: string;
-  children: ReactNode;
-}
-
 export function Section({
   title,
   children,
-}: SectionProps) {
+}: {
+  title: string;
+  children: ReactNode;
+}) {
   return (
     <section>
       <h2 className="text-sm font-semibold text-foreground">

@@ -4,65 +4,45 @@ import { Section } from "@/components/ui/section";
 export default function Privacy() {
   return (
     <LegalLayout
-      pageTitle="Privacy Policy — Flow90"
-      eyebrow="Legal"
       title="Privacy Policy"
+      eyebrow="Legal"
+      lastUpdated="June 2026"
     >
       <Section title="Overview">
         <p>
-          Your privacy is important to us. Flow90 is designed to help you stay
-          focused without collecting personal information. We do not sell,
-          share or monetize your data.
+          Flow90 is designed to help you stay focused without collecting personal data.
         </p>
       </Section>
 
-      <Section title="Information We Collect">
+      <Section title="Data Collection">
         <p>
-          Flow90 does not require an account and does not collect personal
-          information such as your name, email address, phone number, location,
-          contacts, photos or other identifying information.
+          We do not collect, store or process any personal information such as
+          name, email, contacts, location or usage tracking.
         </p>
       </Section>
 
-      <Section title="Local Data">
+      <Section title="Local Storage">
         <p>
-          Your timer settings, preferences and app data are stored locally on
-          your device using Apple's built-in technologies. This information
-          never leaves your device and is not transmitted to BAV Labs.
+          All settings and timer data are stored locally on your device using
+          Apple’s built-in storage technologies. Nothing is transmitted to us.
         </p>
       </Section>
 
-      <Section title="Analytics & Third-Party Services">
+      <Section title="Third-Party Services">
         <p>
-          Flow90 does not use third-party analytics, advertising SDKs or
-          tracking services to collect information about you.
+          Flow90 does not use analytics, advertising SDKs or tracking services.
         </p>
       </Section>
 
       <Section title="Advertising">
         <p>
-          Flow90 does not display personalized advertising and does not sell
-          user data to third parties.
-        </p>
-      </Section>
-
-      <Section title="Children's Privacy">
-        <p>
-          Flow90 is intended for general audiences and does not knowingly
-          collect personal information from children or any other users.
-        </p>
-      </Section>
-
-      <Section title="Changes">
-        <p>
-          We may update this Privacy Policy as Flow90 evolves. Any changes will
-          be published on this page together with the updated revision date.
+          We do not show ads and do not sell user data.
         </p>
       </Section>
 
       <Section title="Contact">
         <p>
-          Questions about this Privacy Policy?
+          Questions?
         </p>
 
         <a
