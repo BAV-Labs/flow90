@@ -66,14 +66,28 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setDark(!dark)}
-            className="grid h-9 w-9 place-items-center rounded-full"
-          >
-            {dark ? <Sun /> : <Moon />}
-          </button>
-        </div>
+<div className="flex items-center gap-2">
+  <button
+    onClick={() => setDark(!dark)}
+    aria-label="Toggle theme"
+    className="grid h-9 w-9 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+  >
+    {dark ? (
+      <Sun className="h-4 w-4" />
+    ) : (
+      <Moon className="h-4 w-4" />
+    )}
+  </button>
+
+  <a
+    href="https://apps.apple.com/de/app/flow90/id6778360123?l=en-GB"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hidden sm:inline-block rounded-full bg-foreground px-4 py-2 text-xs font-medium text-background transition-opacity hover:opacity-90"
+  >
+    Get the app
+  </a>
+</div>
       </div>
     </header>
   );
