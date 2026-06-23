@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bav-labs.github.io/flow90/sitemap.xml
